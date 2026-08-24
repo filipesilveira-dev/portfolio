@@ -7,6 +7,7 @@ export function Skills() {
     <Accordion title="Habilidades">
       <div className={styles.content}>
         <div className={styles.skills}>
+
           <section className={styles.tools}>
             <h3>Ferramentas:</h3>
             <ul>
@@ -24,6 +25,13 @@ export function Skills() {
               {softSkills.map((skill) => (
                 <li>{skill}</li>
               ))}
+            </ul>
+          </section>
+
+          <section className={styles.languages}>
+            <h3>Idiomas:</h3>
+            <ul>
+              <li>Inglês (intermediário)</li>
             </ul>
           </section>
         </div>

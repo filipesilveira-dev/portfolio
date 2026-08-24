@@ -1,7 +1,8 @@
 import "./App.css";
 import { AboutMe } from "./components/AboutMe/AboutMe";
 import { Info } from "./components/info/Info";
-import { Languages } from "./components/languages/Languages";
+// import { Languages } from "./components/languages/Languages";
+import { Portfolio } from "./components/portfolio/Portfolio";
 import { Skills } from "./components/Skills/Skills";
 
 function App() {
@@ -10,8 +11,9 @@ function App() {
     <main className="main">
       <Info/>
       <AboutMe/>
+      <Portfolio/>
       <Skills/>
-      <Languages/>
+      {/* <Languages/> */}
     </main>
   );
 }

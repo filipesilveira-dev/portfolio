@@ -45,8 +45,9 @@
     background-size: contain;
     background-image: url('/src/assets/arrow-top.svg');
     transition: .25s;
+    transform: rotate(180deg);
 }
 
 .accordion.open .trigger::after {
-    transform: rotate(180deg);
+    transform: rotate(0deg);
 }
