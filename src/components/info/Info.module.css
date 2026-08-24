@@ -71,6 +71,10 @@
     background-image: url('/src/assets/gitHub.png');
 }
 
+.information .linkedIn::before {
+    background-image: url('/src/assets/linkedIn.png');
+}
+
 @media only screen and (min-width: 768px) {
     .header {
         display: grid;

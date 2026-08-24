@@ -4,7 +4,7 @@ import { hardSkills, softSkills } from "../../utils/skills";
 
 export function Skills() {
   return (
-    <Accordion title="Skills">
+    <Accordion title="Habilidades">
       <div className={styles.content}>
         <div className={styles.skills}>
           <section className={styles.tools}>
