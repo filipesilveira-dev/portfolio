@@ -8,6 +8,13 @@
   border-radius: 0 0 10px 10px;
 }
 
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .project_title {
   background-color: rgba(0, 0, 0, 0.404);
   margin: 0;
@@ -17,6 +24,7 @@
   box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.6);
   text-align: center;
   text-decoration: none;
+  min-width: 100%;
 }
 
 .project_version {
@@ -28,8 +36,10 @@
   text-align: justify;
   padding: 0 2.5rem 1rem 2.5rem;
   font-weight: 300;
+  font-size: 1.25rem;
   text-align: justify;
   margin: 2rem 1rem;
+  max-width: 80%;
 }
 
 a:hover {
@@ -44,6 +54,7 @@ a:hover {
   border-radius: 10px;
   padding-bottom: 1rem;
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.6);
+  min-width: 85%;
 }
 
 .img {
@@ -82,19 +93,20 @@ a:hover {
   padding: 1rem;
 }
 
-.projectLink, .projectLink_deploy{
+.projectLink,
+.projectLink_deploy {
   background-color: rgba(0, 0, 0, 0.425);
   padding: 1rem;
 }
 
-.projectLink:hover{
-   transform: translateY(-5px) scale(1.05);
-   transition: .3s;
+.projectLink:hover {
+  transform: translateY(-5px) scale(1.05);
+  transition: 0.3s;
 }
 
-.projectLink_deploy:hover{
-   transform: translateY(-5px) scale(1.05);
-   transition: .3s;
+.projectLink_deploy:hover {
+  transform: translateY(-5px) scale(1.05);
+  transition: 0.3s;
 }
 
 .img_bigScreen .img_mobile {
@@ -102,14 +114,14 @@ a:hover {
   flex-direction: column;
 }
 
-.img_bigScreen:hover{
+.img_bigScreen:hover {
   transform: translate(-5px, -5px);
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.img_mobile:hover{
+.img_mobile:hover {
   transform: translate(-5px, -5px);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .portfolio p::before {

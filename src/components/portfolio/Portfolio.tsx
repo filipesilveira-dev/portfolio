@@ -32,16 +32,18 @@ export function Portfolio() {
               </div>
 
               <div className={styles.projectLink_container}>
-                <p className={styles.projectLink}>
-                  Acesse o repositório no GitHub:{" "}
-                  <a
-                    href={projeto.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {projeto.name}
-                  </a>
-                </p>
+                <strong>
+                  <p className={styles.projectLink}>
+                    Acesse o repositório no GitHub:{" "}
+                    <a
+                      href={projeto.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {projeto.name}
+                    </a>
+                  </p>
+                </strong>
 
                 {projeto.deploy && (
                   <>
@@ -49,7 +51,8 @@ export function Portfolio() {
                     <strong>
                       <p className={styles.projectLink_deploy}>
                         Acesse o projeto publicado:{" "}
-                        <a href={projeto.deploy}>{projeto.name}</a>
+                        <a href={projeto.deploy} target="_blank"
+                    rel="noopener noreferrer">{projeto.name}</a>
                       </p>
                     </strong>
                   </>

@@ -12,7 +12,7 @@ export function Skills() {
             <h3>Ferramentas:</h3>
             <ul>
               {hardSkills.map((skill) => (
-                <li>
+                <li className={styles.logo}>
                   <img src={skill.logo} title={skill.name}></img>
                 </li>
               ))}
@@ -23,7 +23,7 @@ export function Skills() {
             <h3>Pessoal:</h3>
             <ul>
               {softSkills.map((skill) => (
-                <li>{skill}</li>
+                <li className={styles.softSkill}>{skill}</li>
               ))}
             </ul>
           </section>
@@ -31,7 +31,7 @@ export function Skills() {
           <section className={styles.languages}>
             <h3>Idiomas:</h3>
             <ul>
-              <li>Inglês (intermediário)</li>
+              <li className={styles.softSkill} title="Nível intermediário (B1), certificado pela Casa de Cultura Britânica da UFC">Inglês (intermediário)</li>
             </ul>
           </section>
         </div>

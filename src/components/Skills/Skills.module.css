@@ -29,17 +29,34 @@
 
 .skills .personal ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     margin: 0;
+    margin-left: 1rem;
     padding: 0;
+    height: 50%;
 }
 
-.skills .personal ul li {
-    margin-left: 2rem;
-    padding: .5rem
+.softSkill{
+    margin: .25rem;
+}
+
+.softSkill:hover{ 
+  transform: translateY(-5px) scale(1.05);
+  transition: 0.3s;
+
+}
+
+.logo {
+    padding: .25rem
+}
+
+.logo:hover{ 
+  transform: translate(-5px, -5px);
+  transition: 0.3s;
+
 }
 
 @media only screen and (min-width: 768px) {

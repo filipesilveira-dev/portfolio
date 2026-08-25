@@ -22,7 +22,7 @@ export function Accordion({ title, children }: accordionProps) {
             animate={{ height: "auto", opacity: 1 }} /* Estado final (aberto) */
             exit={{ height: 0, opacity: 0 }} /* Estado de saída ao fechar */
             transition={{
-              duration: 0.5,
+              duration: 0.3,
               ease: "easeInOut",
             }} /* Tempo e curva */
             style={{ overflow: "hidden" }}
