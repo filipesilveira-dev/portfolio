@@ -18,24 +18,26 @@ export function Info() {
         <p className={styles.location}>Fortaleza - CE</p>
         <p className={styles.phone}>(85) 98888-9887</p>
         <p className={styles.email}>filipesilveira.dev@gmail.com</p>
-        <p className={styles.gitHub}>
-          <a
-            href="https://github.com/filipesilveira-dev"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-        </p>
-        <p className={styles.linkedIn}>
-          <a
-            href="https://www.linkedin.com/in/filipe-silveira-511889351/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
-        </p>
+        <div className={styles.link_container}>
+          <p className={styles.gitHub}>
+            <a
+              href="https://github.com/filipesilveira-dev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+          </p>
+          <p className={styles.linkedIn}>
+            <a
+              href="https://www.linkedin.com/in/filipe-silveira-511889351/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+          </p>
+        </div>
       </div>
     </header>
   );

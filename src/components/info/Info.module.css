@@ -56,6 +56,10 @@
     background-image: url('/src/assets/phone.svg');
 }
 
+.link_container{
+    display: flex;
+    flex-direction: row;
+}
 .information .gitHub::before {
     background-image: url('/src/assets/gitHub.png');
 }
