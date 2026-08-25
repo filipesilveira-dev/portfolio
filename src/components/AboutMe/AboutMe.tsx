@@ -1,7 +1,11 @@
 import { Accordion } from "../accordion/Accordion";
 import styles from "./AboutMe.module.css";
+
+// Seção "Sobre mim"
 export function AboutMe() {
   return (
+
+    // Utiliza o componente reutilizável "Accordion" passando "title" e seu conteúdo específico em forma de "{children}" 
     <Accordion title="Sobre mim">
       <div className={styles.content}>
         <p className={styles.aboutMe}>

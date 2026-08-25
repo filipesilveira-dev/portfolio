@@ -1,3 +1,4 @@
+//Importação direta de imagens por conflitos de caminho após o build
 import diceRoller from "../assets/prints/diceRoller.png";
 import diceRollerMobile from "../assets/prints/diceRollerMobile.png";
 
@@ -10,6 +11,7 @@ import diarioDeBordoMobile from "../assets/prints/diarioDeBordoMobile.png";
 import tudoDevBlog from "../assets/prints/tudoDevBlog.png";
 import tudoDevBlogMobile from "../assets/prints/tudoDevBlogMobile.png";
 
+// Arquivo que fornece os dados consimidos em "Portfolio"
 export const projetos = [
   {
     name: "Dice Roller",

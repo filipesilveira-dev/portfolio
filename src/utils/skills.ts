@@ -1,3 +1,4 @@
+//Importação direta de imagens por conflitos de caminho após o build
 import htmlLogo from "../assets/logos/html.png";
 import cssLogo from "../assets/logos/css.png";
 import jsLogo from "../assets/logos/js.png";
@@ -7,6 +8,7 @@ import nextLogo from "../assets/logos/Next.js.png";
 import gitLogo from "../assets/logos/git.png";
 import githubLogo from "../assets/logos/github.png";
 
+// Arquivo que fornece os dados consimidos em "Skills"
 export const hardSkills = [
   {
     name: "HTML5",

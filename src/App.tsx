@@ -9,11 +9,11 @@ function App() {
   
   return (
     <main className="main">
+      {/* Seções divididas por componentes */}
       <Info/>
       <AboutMe/>
       <Portfolio/>
       <Skills/>
-      {/* <Languages/> */}
     </main>
   );
 }

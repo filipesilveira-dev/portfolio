@@ -1,0 +1,118 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F1A"/>
+      <stop offset="55%" stop-color="#0D1420"/>
+      <stop offset="100%" stop-color="#0A0E17"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6C5CE7" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#6C5CE7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#34D399" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#34D399" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="panelBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B7CF6"/>
+      <stop offset="50%" stop-color="#5EEAD4"/>
+      <stop offset="100%" stop-color="#F5A623"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="28" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+    <clipPath id="panelClip">
+      <rect x="0" y="0" width="1096" height="486" rx="14"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="980" cy="90" r="360" fill="url(#glow1)"/>
+  <circle cx="120" cy="560" r="320" fill="url(#glow2)"/>
+
+  <!-- Faint dot grid texture -->
+  <g opacity="0.10">
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.4" cy="1.4" r="1.4" fill="#94A3B8"/>
+    </pattern>
+    <rect width="1200" height="630" fill="url(#dots)"/>
+  </g>
+
+  <!-- Main editor panel -->
+  <g transform="translate(52,72)" filter="url(#softShadow)">
+    <rect x="-2" y="-2" width="1100" height="490" rx="16" fill="url(#panelBorder)" opacity="0.55"/>
+    <rect x="0" y="0" width="1096" height="486" rx="14" fill="#0F1521"/>
+
+    <g clip-path="url(#panelClip)">
+      <!-- Title bar -->
+      <rect x="0" y="0" width="1096" height="48" fill="#141B29"/>
+      <circle cx="26" cy="24" r="7" fill="#FF5F57"/>
+      <circle cx="50" cy="24" r="7" fill="#FEBC2E"/>
+      <circle cx="74" cy="24" r="7" fill="#28C840"/>
+
+      <!-- File tab -->
+      <rect x="104" y="10" width="164" height="28" rx="6" fill="#1B2434"/>
+      <text x="122" y="29" font-family="'DejaVu Sans Mono', monospace" font-size="14" fill="#5EEAD4">portfolio.tsx</text>
+
+      <!-- vertical line-number gutter -->
+      <rect x="0" y="48" width="56" height="438" fill="#0D1320"/>
+      <g font-family="'DejaVu Sans Mono', monospace" font-size="15" fill="#3A4658">
+        <text x="20" y="118">1</text>
+        <text x="20" y="180">2</text>
+        <text x="20" y="242">3</text>
+        <text x="20" y="290">4</text>
+        <text x="20" y="410">5</text>
+      </g>
+
+      <!-- Decorative oversized code glyphs, top-right of panel -->
+      <text x="900" y="150" font-family="'DejaVu Sans Mono', monospace" font-size="120" font-weight="700" fill="#FFFFFF" opacity="0.05">{ }</text>
+      <text x="905" y="270" font-family="'DejaVu Sans Mono', monospace" font-size="80" font-weight="700" fill="#5EEAD4" opacity="0.08">&lt;/&gt;</text>
+
+      <!-- Comment / eyebrow -->
+      <text x="82" y="100" font-family="'DejaVu Sans Mono', monospace" font-size="17" fill="#546178">// desenvolvedor</text>
+
+      <!-- Main identity block -->
+      <text x="80" y="170" font-family="'DejaVu Sans', sans-serif" font-size="62" font-weight="800" letter-spacing="0.5" fill="#F5F7FA">Filipe Silveira</text>
+      <text x="82" y="222" font-family="'DejaVu Sans Mono', monospace" font-size="30" font-weight="700" fill="#5EEAD4">Desenvolvedor Front-end</text>
+
+      <!-- Stack line -->
+      <g font-family="'DejaVu Sans Mono', monospace" font-size="22" font-weight="500">
+        <text x="82" y="278">
+          <tspan fill="#82AAFF">React</tspan><tspan fill="#546178"> · </tspan><tspan fill="#82AAFF">TypeScript</tspan><tspan fill="#546178"> · </tspan><tspan fill="#82AAFF">Next.js</tspan><tspan fill="#546178"> · </tspan><tspan fill="#82AAFF">Vite</tspan>
+        </text>
+      </g>
+
+      <!-- Divider -->
+      <rect x="80" y="308" width="480" height="2" fill="#20293B"/>
+
+      <!-- Project tabs / chips (bottom, styled as open editor tabs) -->
+      <text x="82" y="368" font-family="'DejaVu Sans Mono', monospace" font-size="15" fill="#546178">// projetos no portfólio</text>
+      <g transform="translate(80,384)" font-family="'DejaVu Sans Mono', monospace">
+        <!-- Dice -->
+        <g transform="translate(0,0)">
+          <rect width="150" height="66" rx="10" fill="#161F31" stroke="#2A3650" stroke-width="1.5"/>
+          <circle cx="26" cy="24" r="4" fill="#F472B6"/>
+          <text x="42" y="29" font-size="13" fill="#8B96AC">component</text>
+          <text x="20" y="52" font-size="19" font-weight="700" fill="#F1F5F9">Dice</text>
+        </g>
+        <!-- Blog -->
+        <g transform="translate(166,0)">
+          <rect width="150" height="66" rx="10" fill="#161F31" stroke="#2A3650" stroke-width="1.5"/>
+          <circle cx="26" cy="24" r="4" fill="#5EEAD4"/>
+          <text x="42" y="29" font-size="13" fill="#8B96AC">app</text>
+          <text x="20" y="52" font-size="19" font-weight="700" fill="#F1F5F9">Blog</text>
+        </g>
+        <!-- PWA -->
+        <g transform="translate(332,0)">
+          <rect width="150" height="66" rx="10" fill="#161F31" stroke="#2A3650" stroke-width="1.5"/>
+          <circle cx="26" cy="24" r="4" fill="#F5A623"/>
+          <text x="42" y="29" font-size="13" fill="#8B96AC">pwa</text>
+          <text x="20" y="52" font-size="19" font-weight="700" fill="#F1F5F9">PWA</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <text x="1148" y="610" text-anchor="end" font-family="'DejaVu Sans Mono', monospace" font-size="15" fill="#546178">filipesilveira-dev.github.io/portfolio</text>
+</svg>

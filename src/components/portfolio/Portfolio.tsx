@@ -4,9 +4,13 @@ import styles from "./Portfolio.module.css";
 
 export function Portfolio() {
   return (
+
+    // Utiliza o componente reutilizável "Accordion" passando "title" e seu conteúdo específico em forma de "{children}" 
     <Accordion title="Projetos">
       <div className={styles.content}>
         <ul className={styles.portfolio}>
+
+          {/* Consome o array "projetos" e renderiza uma estrutura para cada elemento */}
           {projetos.map((projeto) => (
             <li className={styles.project}>
               <h3 className={styles.project_title}>{projeto.name}</h3>
@@ -45,6 +49,7 @@ export function Portfolio() {
                   </p>
                 </strong>
 
+                {/* Renderização condicional caso o projeto tenha link de deploy */}
                 {projeto.deploy && (
                   <>
                     <span>||</span>

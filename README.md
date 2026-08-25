@@ -1,75 +1,156 @@
-# React + TypeScript + Vite
+# Portfolio — Filipe Silveira
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfólio pessoal desenvolvido para apresentar minha trajetória, habilidades técnicas e principais projetos desenvolvidos durante minha formação em Desenvolvimento de Software.
 
-Currently, two official plugins are available:
+O projeto foi desenvolvido com **React, TypeScript e Vite**, utilizando componentes reutilizáveis, organização modular, responsividade e animações.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Acesso
 
-## React Compiler
+**Versão online:**
+https://filipesilveira-dev.github.io/portfolio/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Repositório:**
+https://github.com/filipesilveira-dev/portfolio
 
-## Expanding the ESLint configuration
+## Tecnologias
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* React
+* TypeScript
+* Vite
+* CSS
+* Motion
+* ESLint
+* Git
+* GitHub Actions
+* GitHub Pages
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Como executar localmente
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Pré-requisitos
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+* Node.js
+* npm
+* Git
 
+### Instalação
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/filipesilveira-dev/portfolio.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Acesse a pasta:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+cd portfolio
 ```
+
+Instale as dependências:
+
+```bash
+npm ci
+```
+
+Execute o projeto em modo de desenvolvimento:
+
+```bash
+npm run dev
+```
+
+O endereço da aplicação será informado pelo Vite no terminal.
+
+### Outros comandos
+
+Executar o lint:
+
+```bash
+npm run lint
+```
+
+Gerar o build de produção:
+
+```bash
+npm run build
+```
+
+Visualizar o build localmente:
+
+```bash
+npm run preview
+```
+
+## Deploy
+
+O projeto utiliza **GitHub Actions** para automatizar o build e o deploy no GitHub Pages.
+
+Após um `push` para a branch `main`, o pipeline executa:
+
+```text
+Push
+  ↓
+Instalação das dependências
+  ↓
+Lint
+  ↓
+Build
+  ↓
+Upload do artifact
+  ↓
+Deploy no GitHub Pages
+```
+
+A versão publicada pode ser acessada em:
+
+**https://filipesilveira-dev.github.io/portfolio/**
+
+## Projetos apresentados
+
+### Dice Roller
+
+Aplicação web autoral para simulação de lançamentos de dados de RPG.
+
+O projeto utiliza React, TypeScript, Zustand e Motion, com múltiplos tipos de dados, lançamentos individuais e simultâneos, componentes reutilizáveis, animações e persistência da configuração dos dados. Também possui testes automatizados com Jest e React Testing Library, além de CI/CD com GitHub Actions.
+
+* [Repositório](https://github.com/filipesilveira-dev/dice-roller)
+* [Aplicação](https://filipesilveira-dev.github.io/dice-roller/)
+
+### Sépia Bistrô
+
+Aplicação desenvolvida para explorar a arquitetura de **Micro Frontends**.
+
+O projeto utiliza React, Vite e Module Federation, com uma aplicação Host responsável pela integração de diferentes micro frontends:
+
+* `mfe-container` — integração da aplicação;
+
+* `mfe-menu` — cardápio e seleção de produtos;
+
+* `mfe-checkout` — carrinho e processo de checkout.
+
+* [Repositório](https://github.com/filipesilveira-dev/frontendGithub/tree/main/sepia_bistro_micro_frontend)
+
+### Diário de Bordo
+
+Progressive Web App desenvolvido como atividade prática da EBAC.
+
+O projeto utiliza React, TypeScript, Vite e Zustand para implementar uma aplicação de diário de bordo com características de PWA.
+
+* [Repositório](https://github.com/filipesilveira-dev/frontendGithub/tree/main/diario_de_bordo_PWA)
+
+### Tudo Dev Blog
+
+Blog desenvolvido com Next.js para publicação de artigos técnicos.
+
+O projeto explora recursos do framework como rotas dinâmicas, Server Components, geração estática de páginas e organização da aplicação em camadas, simulando o consumo de uma API.
+
+* [Repositório](https://github.com/filipesilveira-dev/frontendGithub/tree/main/tudo-dev-blog-nextjs)
+* [Aplicação](https://frontend-github-iota.vercel.app/)
+
+## Autor
+
+**Filipe Silveira**
+
+Desenvolvedor Front-end em formação.
+
+* [GitHub](https://github.com/filipesilveira-dev)
+* [LinkedIn](https://www.linkedin.com/in/filipe-silveira-511889351/)
