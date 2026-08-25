@@ -3,7 +3,7 @@ import styles from "./Info.module.css"
 export function Info() {
   return (
     <header className={styles.header}>
-      <img src="/src/assets/my-photo.png" alt="Foto Filipe" className={styles.photo}/>
+      <img src="./src/assets/my-photo.png" alt="Foto Filipe" className={styles.photo}/>
       <h1 className={styles.title}>
         Olá, eu sou <br></br><strong>Filipe P. Silveira</strong>
       </h1>

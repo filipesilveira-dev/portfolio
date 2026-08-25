@@ -1,36 +1,45 @@
+import htmlLogo from "../assets/logos/html.png";
+import cssLogo from "../assets/logos/css.png";
+import jsLogo from "../assets/logos/js.png";
+import nodeLogo from "../assets/logos/nodejs.png";
+import reactLogo from "../assets/logos/react.png";
+import nextLogo from "../assets/logos/Next.js.png";
+import gitLogo from "../assets/logos/git.png";
+import githubLogo from "../assets/logos/github.png";
+
 export const hardSkills = [
   {
     name: "HTML5",
-    logo: "/src/assets/logos/html.png",
+    logo: htmlLogo,
   },
   {
     name: "CSS3",
-    logo: "/src/assets/logos/css.png",
+    logo: cssLogo,
   },
   {
     name: "JavaScript",
-    logo: "/src/assets/logos/js.png",
+    logo: jsLogo,
   },
   {
     name: "Nodejs",
-    logo: "/src/assets/logos/nodejs.png",
+    logo: nodeLogo,
   },
   {
     name: "React",
-    logo: "/src/assets/logos/react.png",
+    logo: reactLogo,
   },
   {
     name: "Next.js",
-    logo: "/src/assets/logos/Next.js.png",
+    logo: nextLogo,
   },
   {
     name: "Git",
-    logo: "/src/assets/logos/git.png",
+    logo: gitLogo,
   },
   {
     name: "GitHub",
-    logo: "/src/assets/logos/github.png",
-  }
+    logo: githubLogo,
+  },
 ];
 
 export const softSkills = [

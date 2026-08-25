@@ -5,16 +5,6 @@
     position: relative;
 }
 
-/* .header::after {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    width: 2rem;
-    height: 2rem;    
-} */
-
 .header .photo {
     width: 200px;
     height: 200px;
@@ -22,7 +12,6 @@
 }
 
 .header .title {
-    font-family: 'Neue Machina';
     text-align: center;
 }
 
