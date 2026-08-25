@@ -15,7 +15,13 @@
 }
 
 @media only screen and (max-width: 768px) {
+
+    .content{
+         padding: 0 1rem .5rem 1rem;
+    }
+
     .aboutMe {
-        font-size: .5rem;
+        font-size: .75rem;
+        padding: 1rem;
     }
 }
