@@ -149,4 +149,14 @@ a:hover {
     align-items: center;
     gap: 1rem;
   }
+
+  .description {
+    font-size: 0.5rem;
+  }
+
+  .projectLink,
+  .projectLink_deploy {
+    font-size: 0.5rem;
+    padding: .5rem;
+  }
 }
