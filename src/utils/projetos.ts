@@ -13,8 +13,8 @@ export const projetos = [
     img: "/src/assets/prints/sepiaBistro.png",
     imgM: "/src/assets/prints/sepiaBistroMobile.png",
     description:
-      "O Container é a aplicação Host responsável por integrar os micro frontends do projeto Sépia Bistrô por meio de Module Federation utilizando React e Vite. Nesta arquitetura, o Container é responsável por carregar dinamicamente os módulos remotos, compondo a aplicação final exibida ao usuário. O projeto é composto pelos seguintes micro frontends: mfe-container → aplicação Host responsável pela integração. mfe-menu → responsável pela exibição do cardápio e seleção dos produtos. mfe-checkout → responsável pelo carrinho de compras e processo de checkout.",
-    url: "URL_DO_GIT",
+      "Trata-se de uma página web desenvolvida utilizando a arquitetura de micro frontends. O Container é a aplicação Host responsável por integrar os micro frontends do projeto Sépia Bistrô por meio de Module Federation utilizando React e Vite. Nesta arquitetura, o Container é responsável por carregar dinamicamente os módulos remotos, compondo a aplicação final exibida ao usuário. O projeto é composto pelos seguintes micro frontends: mfe-container → aplicação Host responsável pela integração. mfe-menu → responsável pela exibição do cardápio e seleção dos produtos. mfe-checkout → responsável pelo carrinho de compras e processo de checkout.",
+    url: "https://github.com/filipesilveira-dev/frontendGithub/tree/main/sepia_bistro_micro_frontend",
     deploy: "",
   },
   {
@@ -22,7 +22,7 @@ export const projetos = [
     img: "/src/assets/prints/diarioDeBordo.png",
     imgM: "/src/assets/prints/diarioDeBordoMobile.png",
     description: "Projeto desenvolvido como atividade prática da EBAC com o objetivo de implementar um Diário de Bordo como Progressive Web App (PWA) utilizando React, TypeScript, Vite e Zustand.",
-    url: "URL_DO_GIT",
+    url: "https://github.com/filipesilveira-dev/frontendGithub/tree/main/diario_de_bordo_PWA",
     deploy: "",
   },
   {

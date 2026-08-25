@@ -8,14 +8,13 @@ export function Portfolio() {
       <div className={styles.content}>
         <ul className={styles.portfolio}>
           {projetos.map((projeto) => (
-            <li>
-              <h3>{projeto.name}</h3>
+            <li className={styles.project}>
+              <h3 className={styles.project_title}>{projeto.name}</h3>
 
               <p className={styles.description}>{projeto.description}</p>
-              {/* USAR DISPLAY FLEX PARA FICAR UMA IMAGEM DO LADO DA OUTRA */}
               <div className={styles.img_container}>
                 <div className={styles.img_bigScreen}>
-                  <h4>Telas grandes</h4>
+                  <h4 className={styles.project_version}>Telas grandes</h4>
                   <img
                     src={projeto.img}
                     alt="Imagem do Dice Roller em telas grandes"
@@ -23,7 +22,7 @@ export function Portfolio() {
                   />
                 </div>
                 <div className={styles.img_mobile}>
-                  <h4>Versão mobile</h4>
+                  <h4 className={styles.project_version}>Versão mobile</h4>
                   <img
                     src={projeto.imgM}
                     alt="Imagem do Dice Roller em telas pequenas"

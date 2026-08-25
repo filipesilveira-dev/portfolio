@@ -9,4 +9,7 @@
     font-weight: 300;
     font-size: 1.25rem;
     text-align: justify;
+    padding: 2rem;
+    background-color: #3f4077;
+    border-radius: 10px;
 }
