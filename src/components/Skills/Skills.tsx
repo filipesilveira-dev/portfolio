@@ -25,7 +25,7 @@ export function Skills() {
           </section>
 
           <section className={styles.personal}>
-            <h3>Pessoal:</h3>
+            <h3>Competências:</h3>
             <ul>
 
               {/* Consome o array "softKills" e renderiza uma estrutura para cada elemento */}

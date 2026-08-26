@@ -46,8 +46,9 @@ export const hardSkills = [
 
 export const softSkills = [
   "Proatividade",
-  "Resolutibilidade",
-  "Resiliência",
+  "Resolução de problemas",
+  "Pensamento analítico",
   "Trabalho em equipe",
-  "Empatia",
+  "Aprendizado contínuo",
+  "Comunicação",
 ];

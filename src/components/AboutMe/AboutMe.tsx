@@ -4,12 +4,42 @@ import styles from "./AboutMe.module.css";
 // Seção "Sobre mim"
 export function AboutMe() {
   return (
-
-    // Utiliza o componente reutilizável "Accordion" passando "title" e seu conteúdo específico em forma de "{children}" 
+    // Utiliza o componente reutilizável "Accordion" passando "title" e seu conteúdo específico em forma de "{children}"
     <Accordion title="Sobre mim">
       <div className={styles.content}>
         <p className={styles.aboutMe}>
           Olá! Sou Filipe e estou em transição de carreira para o
+          Desenvolvimento Web, com foco em Front-end. Desde janeiro de 2025,
+          venho construindo minha formação por meio de estudos contínuos e
+          projetos práticos, desenvolvendo conhecimentos em HTML5, CSS3,
+          JavaScript, TypeScript, React e Next.js, complementados por cursos da
+          EBAC, Origamid e DIO. Atualmente, curso Análise e Desenvolvimento de
+          Sistemas na Estácio, iniciada em agosto de 2025. Sou também graduado
+          em Psicologia pela UFC, formação que contribuiu para competências como
+          pensamento analítico, comunicação, colaboração e aprendizado contínuo.
+          Busco uma oportunidade em Front-end para aplicar meus conhecimentos,
+          continuar evoluindo e contribuir para a construção de soluções que
+          gerem valor para os usuários.
+          
+          {/* Olá! Sou Filipe e estou em transição de carreira para o
+          Desenvolvimento Web, com foco em Front-end. Desde janeiro de 2025,
+          venho construindo minha formação por meio de estudos contínuos e,
+          principalmente, da aplicação prática dos conhecimentos em projetos.
+          Nesse percurso, desenvolvi habilidades em HTML5, CSS3, JavaScript,
+          TypeScript, React e Next.js, complementando minha formação com cursos
+          voltados à prática profissional em plataformas como EBAC, Origamid e
+          DIO. Atualmente, curso Análise e Desenvolvimento de Sistemas na
+          Estácio, iniciada em agosto de 2025, consolidando minha formação
+          técnica na área. Antes da transição, sou graduado em Psicologia pela
+          Universidade Federal do Ceará (UFC), trajetória que contribuiu para
+          desenvolver competências que hoje levo para a tecnologia, como
+          comunicação, colaboração, pensamento analítico, resiliência, adaptação
+          e aprendizado contínuo. Possuo ainda inglês intermediário (B1),
+          certificado pela Casa de Cultura Britânica da UFC. Busco oportunidades
+          em Desenvolvimento Front-end onde possa continuar aprendendo, aplicar
+          boas práticas e contribuir para a construção de soluções que gerem
+          valor para seus usuários. */}
+          {/* Olá! Sou Filipe e estou em transição de carreira para o
           Desenvolvimento Web, com foco atual em Front-end. <br></br><br></br>Desde janeiro de
           2025, venho construindo minha formação na área por meio de estudos
           contínuos e, principalmente, da aplicação prática dos conhecimentos em
@@ -34,7 +64,7 @@ export function AboutMe() {
           oportunidades profissionais em Desenvolvimento Front-end, em equipes
           que valorizem aprendizado contínuo, colaboração, resolução de
           problemas, boas práticas de desenvolvimento e a criação de soluções
-          que gerem valor para seus usuários.
+          que gerem valor para seus usuários. */}
         </p>
       </div>
     </Accordion>
